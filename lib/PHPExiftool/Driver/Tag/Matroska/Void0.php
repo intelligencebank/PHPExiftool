@@ -17,7 +17,7 @@ use PHPExiftool\Driver\AbstractTag;
 /**
  * @ExclusionPolicy("all")
  */
-class Void extends AbstractTag
+class Void0 extends AbstractTag
 {
 
     protected $Id = 108;
