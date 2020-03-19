@@ -99,6 +99,30 @@ abstract class AbstractTag implements TagInterface
     }
 
     /**
+     * Returns expected data type value for this tag.
+     *
+     * @VirtualProperty
+     *
+     * @return string
+     */
+    public function getType()
+    {
+        return $this->Type;
+    }
+
+    /**
+     * Returns true if the Tag is mandatory to have values.
+     *
+     * @VirtualProperty
+     *
+     * @return boolean
+     */
+    public function isMandatory()
+    {
+        return $this->flag_Mandatory;
+    }
+
+    /**
      * Returns true if the Tag handles list values
      *
      * @VirtualProperty
@@ -189,4 +213,5 @@ abstract class AbstractTag implements TagInterface
     {
         return $this->getTagname();
     }
+
 }
